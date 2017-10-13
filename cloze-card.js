@@ -1,3 +1,4 @@
+//This is what I thought was correct.
 //var ClozeCard = function(text, cloze) {
 	//this.text = "text";
 	//this.cloze = "cloze";
@@ -11,6 +12,10 @@
 //};
 
 //module.exports = ClozeCard;
+
+//I was told that this is what my code should look like. 
+//So confused. WHY???
+
 
     if (!(this instanceof ClozeCard)){
             return new ClozeCard (text, cloze);

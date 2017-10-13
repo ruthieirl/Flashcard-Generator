@@ -45,8 +45,31 @@ inquirer
 		cardsQuiz();
 		break;
 	
-		case "exit":
-		exit();
+		case "done":
+		end();
 		break;
 	});
 
+function cardB() {
+	//make a new basic card
+};
+
+function cardC() {
+	//make a new close card
+};
+
+function cardBQuiz() {
+	//quiz with all basic cards
+};
+
+function cardCQuiz() {
+	//quiz with all cloze cards
+};
+
+function cardQuiz() {
+	//quiz with all cards
+};
+
+function end() {
+
+};
