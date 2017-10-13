@@ -10,7 +10,7 @@ var wrong = 0;
 //empty card array
 var flashArr = [];
 
-
+console.log(err);
 inquirer
 	.prompt([
 		type: "list",
@@ -49,3 +49,4 @@ inquirer
 		exit();
 		break;
 	});
+
