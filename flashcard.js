@@ -9,3 +9,43 @@ var wrong = 0;
 
 //empty card array
 var flashArr = [];
+
+
+inquirer
+	.prompt([
+		type: "list",
+		name: "action",
+		message: "Choose one.",
+		choices: [
+			"create-basic-card",
+			"create-cloze-card",
+			"basic-card-quiz",
+			"cloze-card-quiz",
+			"all-card-quiz"
+			]
+	]).then(switch(choices){
+
+		case "create-basic-card":
+		cardB();
+		break;
+
+		case "create-cloze-card":
+		cardC();
+		break;
+
+		case "basic-card-quiz":
+		cardBQuiz();
+		break;
+
+		case "cloze-card-quiz":
+		cardCQuiz();
+		break;
+
+		case "all-card-quiz":
+		cardsQuiz();
+		break;
+	
+		case "exit":
+		exit();
+		break;
+	});

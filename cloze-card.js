@@ -5,10 +5,9 @@ var ClozeCard = function(text, cloze) {
 	console.log(this.text)
 	console.log(this.cloze)
 
+	//partial is the text with the cloze replaced with a blank
 	this.partial = this.text.replace(this.cloze, "__________");
 	console.log(this.partial);
 };
-
-//if the cloze text is in the text, remove the cloze to get the partial
 
 module.exports = ClozeCard;
